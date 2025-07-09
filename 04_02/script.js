@@ -6,15 +6,17 @@
 import Backpack from "./Backpack.js";
 
 const everydayPack = new Backpack(
-  "Everyday Pack",
-  30,
-  "grey",
-  15,
-  26,
-  26,
-  false,
-  "December 5, 2018 15:00:00 PST"
+	"Everyday Pack",
+	30,
+	"grey",
+	15,
+	26,
+	26,
+	false,
+	"December 5, 2018 15:00:00 PST"
 );
+
+const content2 = "<h1>" + everydayPack.name + "</h1>"
 
 const content = `
   <main>
@@ -33,7 +35,7 @@ const content = `
   </main>
 `;
 
-document.body.innerHTML = content;
+document.body.innerHTML = content2;
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
